@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GUI/UI Inside Game Canvas</title>
+    </head>
+    <body onload="Info()">
+        <div id="ui-handler">
+        <canvas id="cake-canvas"></canvas>
+        <button id="cake-ui-button-1" onclick="OpenSource()">Cake UI Button</button>
+        <button id="cake-ui-button-2" onclick="Fire()">Click Me</button>
+        <input id="cake-input-test-1" placeHolder="Enter Your Text Here!!!" type="text">
+        <input id="cake-input-test-2" onchange="Check()" placeHolder="Type Cakes Then Hit Enter Key To See In Action!!!" type="text">
+        <details id="cake-info">
+            <summary>What Is Cake Game Engine?</summary>
+            <p>Is An 2D And 3D <b>HTML5 Game Engine</b> Which Is Will Be Released Soon.</p>
+            <br>
+            <p>It Will Have Different Graphics APIs In Addition To APIs For Many Famous HTML5 Game Engines</p>
+        </details>
+         <select id="whats-more" name="More...">
+         <option value="More...">More</option>
+         <option value="About This Project" onclick="About()">About This Code</option>
+         <option value="Exit From The App" onclick="ConfirmExit()">Exit</option>
+         </select> 
+        </div>
+    </body>
+    <script>
+        var Info = () =>
+        {
+            alert("This Is An Example To Use In HTML5 About How To Add UI And HTML Forms Into The Game Canvas");
+            alert("You May Use It In Cake Game Engine,Or Any HTML5 App/Game!!!");
+            alert("Please See Javascript Tab!!!");
+        };
+    
+        var Fire = () => alert("Not Just Games,But Cakes {|:{)");
+
+        var OpenSource = () =>
+        {
+            if(confirm("Would You Like To See The Stack Overflow Question About HTML Forms Inside Canvas?")) window.open("https://stackoverflow.com/questions/9405772/input-form-inside-canvas-element");
+        };
+
+        
+        var Check = () =>
+        {
+            var input_1 = document.getElementById("cake-input-test-1");
+            var input_2 = document.getElementById("cake-input-test-2");
+            var button_1 = document.getElementById("cake-ui-button-1");
+            var button_2 = document.getElementById("cake-ui-button-2");
+            
+            if(input_2.value == "Cakes")
+            {
+               var cakecanvas = document.getElementById("cake-canvas");
+               input_1.style.color = "green";
+               input_1.value = "Canvas Says:Thanks For Changing My Border!!!";
+               input_1.placeholder = ";) Am I Right?,Upvote The Code Now ;)";
+               cakecanvas.style.border = "black 3px solid";
+            }
+        };  
+            
+        var About = () =>
+        {
+            alert("I Made This Project To Show How Can UI And GUI Be Inside HTML5 Games Literally Like Native Games");
+            alert("Instead Of Using WebGL And OpenGL And Javascript Libraries!!!");
+        };
+        
+        
+        var ConfirmExit = () =>
+        {
+          if(confirm("Exit The App?"))
+          {
+              try
+              {
+              window.close();
+              }
+              catch(e)
+              {
+                  alert("ERROR:NO_EXIT");
+                  console.log("ERROR:NO_EXIT");
+              }
+          }
+        };
+
+/*
+Idea Taken From One Of Stack Overflow's Javascript Questions,See: 
+
+https://stackoverflow.com/questions/9405772/input-form-inside-canvas-element
+*/
+/*
+An GUI And UI Test Using HTML Forms For Use With Canvas And HTML5 Games!!!
+
+The Events Codes Are In The Same HTML Tab Of Script Tag!!!
+
+Don't Forget To Upvote,For More See My Old Codes Too!!!
+
+For Now How I Did It,Check Link Above Or Open CSS Tab With Reading Carefully!!!
+*/
+//Created By Rabia Alhaffar In 15/July/2019
+    </script>
+    <style>
+        /* UI Handler,By Mean The Div Tag That Handle All The Example!!! */
+#ui-handler
+{
+    
+    height:400px;
+    width:400px;
+    position:relative;
+    
+}
+
+
+/* Style For The Canvas!!! */
+#cake-canvas
+{
+    
+    height:400px;
+    width:400px;
+    border:black 3px dotted;
+    
+}
+
+
+/* Style For The First Cyan Button!!! */
+#cake-ui-button-1
+{
+    
+    height:50px;
+    width:200px;
+    top:5px;
+    left:5px;
+    color:white;
+    font-size:20px;
+    background-color:cyan;
+    position:absolute;
+    
+}
+
+
+/* Style For The Second Red Button!!! */
+#cake-ui-button-2
+{
+    
+    height:50px;
+    width:200px;
+    top:5px;
+    left:200px;
+    color:white;
+    font-size:20px;
+    background-color:red;
+    position:absolute;
+    
+}
+
+
+/* Style For The First Input Form!!! */
+#cake-input-test-1
+{
+    
+    height:50px;
+    width:395px;
+    top:55px;
+    left:5px;
+    color:black;
+    position:absolute;
+    
+}
+
+/* Style For The First Input Form!!! */
+#cake-input-test-2
+{
+    
+    height:50px;
+    width:395px;
+    top:105px;
+    left:5px;
+    color:purple;
+    position:absolute;
+    
+}
+
+
+/* Style For Info Summary And Info Details*/
+#cake-info
+{
+    
+    height:50px;
+    width:395px;
+    top:165px;
+    left:5px;
+    position:absolute;
+    
+}
+
+
+/* Style For The Selecting List*/
+#whats-more
+{
+    
+    height:50px;
+    width:395px;
+    top:350px;
+    left:5px;
+    font-size:20px;
+    color:white;
+    background-color:purple;
+    position:absolute;
+    
+}
+    </style>
+</html>

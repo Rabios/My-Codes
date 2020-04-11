@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet"> 
+        <title>Secret Code</title>
+    </head>
+    <body>
+        <center>
+            <h1>SECRET CODE</h1>
+            <p style="color: black; background-color: black;">JUST SMILE AND BE POSITIVE,YOU CAN DO IT</p><br>
+            <p style="text-align: center;">ENTER CODE</p><br>
+            <input type="text"><br><br>
+            <button id="btn-sol-check">CHECK SOLUTION</button>
+        </center>
+    </body>
+    <script>
+        //Created By Rabia Alhaffar In 16/March/2020
+        document.getElementsByTagName("button")[0].onclick = () => alert(document.getElementsByTagName("input")[0].value == document.getElementsByTagName("p")[0].innerHTML ? "VICTORY!!!" : "TRY AGAIN!!!");
+    </script>
+    <style>
+body,input,button,p,h1
+{
+    font-family: "Jura";
+    width: 100%;
+}
+
+p
+{
+ text-align: left;   
+}
+
+#btn-sol-check
+{
+    background-color: dodgerblue;
+    color: white;
+    font-family: "Jura";
+    height: 50px;
+}
+    </style>
+</html>

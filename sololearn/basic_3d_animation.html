@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic 3D Animation</title>
+    </head>
+    <body>
+        <div id="Box"></div>
+    </body>
+    <script>
+        //Created By Rabia Alhaffar In 18/2/2019
+        //An Basic 3D Animation Using CSS!!!
+        //Hope You Like It!!!
+        //I Suggest See This Code On Strong Device!!!
+    </script>
+    <style>
+    #Box
+    {
+    /*Defines Our Shape!!!*/
+    height:150px;
+    width:150px;
+    background-color:white;
+    /*Add Shadows!!!*/
+    box-shadow:5px 10px 20px 2px black;
+    /*And Placing Position!!!*/
+    position:relative;
+    top:150px;
+    right:-200px;
+    /*Our Animation From This Line To Line 117!!!*/
+    animation-name:rotate;
+    animation-duration:5s;
+    /*This Is To Let The Animation Repeat Forever!!!*/
+    animation-iteration-count:infinite;
+    }
+    @keyframes rotate 
+    {
+0% {background-color:red; transform:rotate3d(-30,-90,-90,0deg); scale3d(0,-30,0);}
+1.25% {background-color:orange; transform:rotate3d(-30,-90,-90,-5deg); scale3d(0,-30,0);}
+2.50% {background-color:yellow; transform:rotate3d(-30,-90,-90,-10deg); scale3d(0,-30,0);}
+3.75% {background-color:green; transform:rotate3d(-30,-90,-90,-15deg); scale3d(0,-30,0);}
+5% {background-color:blue; transform:rotate3d(-30,-90,-90,-20deg); scale3d(0,-30,0);}
+6.25% {background-color:violet; transform:rotate3d(-30,-90,-90,-25deg); scale3d(0,-30,0);}
+7.50% {background-color:purple; transform:rotate3d(-30,-90,-90,-30deg); scale3d(0,-30,0);}
+8.75% {background-color:cyan; transform:rotate3d(-30,-90,-90,-35deg); scale3d(0,-30,0);}
+10% {background-color:brown; transform:rotate3d(-30,-90,-90,-40deg); scale3d(0,-30,0);}
+11.25% {background-color:grey; transform:rotate3d(-30,-90,-90,-45deg); scale3d(0,-30,0);}
+12.50% {background-color:black; transform:rotate3d(-30,-90,-90,-50deg); scale3d(0,-30,0);}
+13.75% {background-color:gold; transform:rotate3d(-30,-90,-90,-55deg); scale3d(0,-30,0);}
+15% {background-color:RebeccaPurple; transform:rotate3d(-30,-90,-90,-60deg); scale3d(0,-30,0);}
+16.25% {background-color:teal; transform:rotate3d(-30,-90,-90,-65deg); scale3d(0,-30,0);}
+17.50% {background-color:AliceBlue; transform:rotate3d(-30,-90,-90,-70deg); scale3d(0,-30,0);}
+18.75% {background-color:aquamarine; transform:rotate3d(-30,-90,-90,-75deg); scale3d(0,-30,0);}
+20% {background-color:snow; transform:rotate3d(-30,-90,-90,-80deg); scale3d(0,-30,0);}
+21.25% {background-color:turquoise; transform:rotate3d(-30,-90,-90,-85deg); scale3d(0,-30,0);}
+22.50% {background-color:crimson; transform:rotate3d(-30,-90,-90,-90deg); scale3d(0,-30,0);}
+23.75% {background-color:lightseagreen; transform:rotate3d(-30,-90,-90,-95deg); scale3d(0,-30,0);}
+25% {background-color:lightpink; transform:rotate3d(-30,-90,-90,-100deg); scale3d(0,-30,0);}
+26.25% {background-color:lightsalmon; transform:rotate3d(-30,-90,-90,-105deg); scale3d(0,-30,0);}
+27.50% {background-color:khaki; transform:rotate3d(-30,-90,-90,-110deg); scale3d(0,-30,0);}
+28.75% {background-color:wheat; transform:rotate3d(-30,-90,-90,-115deg); scale3d(0,-30,0);}
+30% {background-color:firebrick; transform:rotate3d(-30,-90,-90,-120deg); scale3d(0,-30,0);}
+31.25 {background-color:deepskyblue; transform:rotate3d(-30,-90,-90,-125deg); scale3d(0,-30,0);}
+32.50% {background-color:gainsboro; transform:rotate3d(-30,-90,-90,-130deg); scale3d(0,-30,0);}
+33.75% {background-color:purple; transform:rotate3d(-30,-90,-90,-135deg); scale3d(0,-30,0);}
+35% {background-color:ghostwhite; transform:rotate3d(-30,-90,-90,-140deg); scale3d(0,-30,0);}
+36.25% {background-color:gray; transform:rotate3d(-30,-90,-90,-145deg); scale3d(0,-30,0);}
+37.50% {background-color:fuchsia; transform:rotate3d(-30,-90,-90,-150deg); scale3d(0,-30,0);}
+38.75% {background-color:dodgerblue; transform:rotate3d(-30,-90,-90,-155deg); scale3d(0,-30,0);}
+40% {background-color:hotpink; transform:rotate3d(-30,-90,-90,-160deg); scale3d(0,-30,0);}
+41.25% {background-color:ivory; transform:rotate3d(-30,-90,-90,-165deg); scale3d(0,-30,0);}
+42.50% {background-color:coral; transform:rotate3d(-30,-90,-90,-170deg); scale3d(0,-30,0);}
+43.75% {background-color:lightcoral; transform:rotate3d(-30,-90,-90,-175deg); scale3d(0,-30,0);}
+45% {background-color:lightblue; transform:rotate3d(-30,-90,-90,-180deg); scale3d(0,-30,0);}
+46.25% {background-color:ghostwhite; transform:rotate3d(-30,-90,-90,-185deg); scale3d(0,-30,0);}
+47.50% {background-color:mediumpurple; transform:rotate3d(-30,-90,-90,-190deg); scale3d(0,-30,0);}
+48.75% {background-color:mediumorchid; transform:rotate3d(-30,-90,-90,-195deg); scale3d(0,-30,0);}
+50% {background-color:white; transform:rotate3d(-30,-90,-90,-200deg); scale3d(0,-30,0);}
+51.25% {background-color:red; transform:rotate3d(-30,-90,-90,-205deg); scale3d(0,-30,0);}
+52.50% {background-color:orange; transform:rotate3d(-30,-90,-90,-210deg); scale3d(0,-30,0);}
+53.75% {background-color:yellow; transform:rotate3d(-30,-90,-90,-215deg); scale3d(0,-30,0);}
+55% {background-color:green; transform:rotate3d(-30,-90,-90,-220deg); scale3d(0,-30,0);}
+56.25% {background-color:blue; transform:rotate3d(-30,-90,-90,-225deg); scale3d(0,-30,0);}
+57.50% {background-color:violet; transform:rotate3d(-30,-90,-90,-230deg); scale3d(0,-30,0);}
+58.75% {background-color:purple; transform:rotate3d(-30,-90,-90,-235deg); scale3d(0,-30,0);}
+60% {background-color:cyan; transform:rotate3d(-30,-90,-90,-240deg); scale3d(0,-30,0);}
+61.25% {background-color:brown; transform:rotate3d(-30,-90,--90,-245deg); scale3d(0,-30,0);}
+62.50% {background-color:grey; transform:rotate3d(-30,-90,-90,-250deg); scale3d(0,-30,0);}
+63.75% {background-color:black; transform:rotate3d(-30,-90,-90,-255deg); scale3d(0,-30,0);}
+65% {background-color:gold; transform:rotate3d(-30,-90,-90,-260deg); scale3d(0,-30,0);}
+66.25% {background-color:RebeccaPurple; transform:rotate3d(-30,-90,-90,-265deg); scale3d(0,-30,0);}
+67.50% {background-color:teal; transform:rotate3d(-30,-90,-90,-270deg); scale3d(0,-30,0);}
+68.75% {background-color:AliceBlue; transform:rotate3d(-30,-90,-90,-275deg); scale3d(0,-30,0);}
+70% {background-color:aquamarine; transform:rotate3d(-30,-90,-90,-280deg); scale3d(0,-30,0);}
+71.25% {background-color:snow; transform:rotate3d(-30,-90,-90,-285deg); scale3d(0,-30,0);}
+72.50% {background-color:turquoise; transform:rotate3d(-30,-90,-90,-290deg); scale3d(0,-30,0);}
+73.75% {background-color:crimson; transform:rotate3d(-30,-90,-90,-295deg); scale3d(0,-30,0);}
+75% {background-color:lightseagreen; transform:rotate3d(-30,-90,-90,--300deg); scale3d(0,-30,0);}
+76.25% {background-color:lightpink; transform:rotate3d(-30,-90,-90,-305deg); scale3d(0,-30,0);}
+77.50% {background-color:lightsalmon; transform:rotate3d(-30,-90,-90,-310deg); scale3d(0,-30,0);}
+78.75% {background-color:khaki; transform:rotate3d(-30,-90,-90,-315deg); scale3d(0,-30,0);}
+80% {background-color:wheat; transform:rotate3d(-30,-90,-90,-320deg); scale3d(0,-30,0);}
+81.25% {background-color:firebrick; transform:rotate3d(-30,-90,-90,-325deg); scale3d(0,-30,0);}
+82.50% {background-color:deepskyblue; transform:rotate3d(-30,-90,-90,-330deg); scale3d(0,-30,0);}
+83.75% {background-color:gainsboro; transform:rotate3d(-30,-90,-90,-335deg); scale3d(0,-30,0);}
+85% {background-color:purple; transform:rotate3d(-30,-90,-90,-340deg); scale3d(0,-30,0);}
+86.25% {background-color:ghostwhite; transform:rotate3d(-30,-90,-90,-345deg); scale3d(0,-30,0);}
+87.50% {background-color:gray; transform:rotate3d(-30,-90,-90,-350deg); scale3d(0,-30,0);}
+88.75% {background-color:fuchsia; transform:rotate3d(-30,-90,-90,-355deg); scale3d(0,-30,0);}
+90% {background-color:dodgerblue; transform:rotate3d(-30,-90,-90,-360deg); scale3d(0,-30,0);}
+91.25% {background-color:hotpink; transform:rotate3d(-30,-90,-90,-365deg); scale3d(0,-30,0);}
+92.50% {background-color:ivory; transform:rotate3d(-30,-90,-90,-370deg); scale3d(0,-30,0);}
+93.75% {background-color:coral; transform:rotate3d(-30,-90,-90,-375deg); scale3d(0,-30,0);}
+95% {background-color:lightcoral; transform:rotate3d(-30,-90,-90,-380deg); scale3d(0,-30,0);}
+96.25% {background-color:lightblue; transform:rotate3d(-30,-90,-90,-385deg); scale3d(0,-30,0);}
+97.50% {background-color:ghostwhite; transform:rotate3d(-30,-90,-90,-390deg); scale3d(0,-30,0);}
+98.75% {background-color:mediumpurple; transform:rotate3d(-30,-90,-90,-395deg); scale3d(0,-30,0);}
+100% {background-color:white; transform:rotate3d(-30,-90,-90,-400deg); scale3d(0,-30,0);}
+    }
+    </style>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lua In Your Browser</title>
+	</head>
+	<body></body>
+	<script src="https://fengari.io/static/js/fengari-web.js"></script>
+	<script type="application/lua">
+	-- You Can Run Lua Even Offline In Your Browser,With Fengari
+	-- Check Out Here: https://fengari.io/
+	print(_VERSION)
+	print("Hello World!!!")
+	local js = require("js")
+	local window = js.global
+	window.document:write("<center><h1>Fengari</h1></center>")
+	window.document:write("<p> Fengari (Moon in greek) is the Lua VM written in JavaScript. It uses JavaScript's garbage collector so that interoperability with the DOM is non-leaky. It comes with a simple module, that renders any interaction with JavaScript and the DOM transparent: </p>")
+	</script>
+</html>
